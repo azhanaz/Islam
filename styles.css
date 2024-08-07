@@ -1,0 +1,135 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #c1bd52, #bdbb8c);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background: rgba(0,0,0,0.5);
+}
+
+.bird-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bird {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/6043/twitter.svg') no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  animation: fly 5s linear infinite;
+}
+
+.bird-container--one {
+  animation: moveBird1 15s linear infinite;
+}
+
+.bird-container--two {
+  animation: moveBird2 15s linear infinite;
+}
+
+.bird-container--three {
+  animation: moveBird3 15s linear infinite;
+}
+
+.bird-container--four {
+  animation: moveBird4 15s linear infinite;
+}
+
+@keyframes moveBird1 {
+  0% { transform: translate(-10vw, 0vh) scale(0.5); }
+  100% { transform: translate(110vw, 10vh) scale(0.5); }
+}
+
+@keyframes moveBird2 {
+  0% { transform: translate(-10vw, 10vh) scale(0.7); }
+  100% { transform: translate(110vw, 0vh) scale(0.7); }
+}
+
+@keyframes moveBird3 {
+  0% { transform: translate(-10vw, 20vh) scale(0.4); }
+  100% { transform: translate(110vw, 30vh) scale(0.4); }
+}
+
+@keyframes moveBird4 {
+  0% { transform: translate(-10vw, 30vh) scale(0.6); }
+  100% { transform: translate(110vw, 20vh) scale(0.6); }
+}
+
+@keyframes fly {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-10px) rotate(0); }
+  100% { transform: translateY(0) rotate(0); }
+}
+
+.filter {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.stillCardImage {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+#tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#tabs button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#tabs button.active {
+  background-color: #904e95;
+  color: white;
+}
+
+#tabs button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+#surah-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
