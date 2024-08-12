@@ -133,3 +133,59 @@ nav a.active {
   border-radius: 10px;
   color: white;
 }
+
+
+/* trivia styles */
+/* .container {
+  width: 450px;
+  padding: 20px;
+  margin-top: 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+} */
+
+.quiz-title {
+  text-align: center;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quiz-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.quiz-button:hover {
+  background-color: #3071a9;
+}
+
+.quiz-result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.quiz-hide{
+  display: none;
+}
